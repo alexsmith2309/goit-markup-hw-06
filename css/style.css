@@ -437,9 +437,9 @@ padding-bottom: 0;
     font-size: 16px;
     color: var(--white-color);
     background-color: var(--accent-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 160%;
     letter-spacing: calc(1em / 16.7);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .primary:hover,
 .primary:focus {
@@ -620,8 +620,10 @@ padding-bottom: 0;
 }
 
 .contact-form-checkbox-wrapper {
-    display: block;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact-form-message:focus {
@@ -683,7 +685,64 @@ padding-bottom: 0;
     font-weight: 700;
     font-size: 16px;
     color: var(--white-color);
-    background-color: var(--accent-color);
+    background-color: #188CE8;
+    ;
     line-height: 160%;
     letter-spacing: calc(1em / 16.7);
   }
+
+  .modal-text {
+      display: block;
+      font-size: 20px;
+      line-height: 100%;
+      margin-bottom: 12px;
+      white-space: nowrap;
+      font-weight: 700;
+  }
+
+  .subscription-btn {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    line-height: 160%;
+    letter-spacing: calc(1em / 16.7);
+    margin-left: 12px;
+    display: flex;
+  }
+
+  .subscription-form-input {
+        width: 358px;
+        height: 50px;
+        background-color: var(--background-secondary-color);
+        border-color: rgba(255, 255, 255, 0.3);
+        padding: 16px 15px;
+        color: var(--white-color);
+  }
+
+  .subscription-form-input::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+  }
+
+  .subscription-form-input:focus {
+    background-color: var(--background-secondary-color);
+    color: var(--white-color);
+  }
+
+.subscription {
+    margin-left: 70px;
+}
+
+.subscription-btn-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.subscription-form-block {
+    display: flex;
+    align-items: center;
+}
